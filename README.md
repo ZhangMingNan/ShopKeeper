@@ -1,6 +1,9 @@
 # ShopKeeper
 鞋店库存管理系统
 
+![(logo)](http://7u2o6d.com1.z0.glb.clouddn.com/Snip20151023_3.png)
+
+
 0、运行项目
 
 进入项目目录执行maven命令 mvn eclipse:eclipse ,执行完成后导入eclipse中. 
@@ -21,3 +24,4 @@
 
 * JS框架：jQuery 1.9。
 * 组件库:EasyUI 1.3
+
