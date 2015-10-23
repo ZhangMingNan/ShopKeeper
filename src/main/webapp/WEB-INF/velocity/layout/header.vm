@@ -1,0 +1,14 @@
+    <title>账本</title>
+	<link type="image/x-icon" rel="shortcut icon"  href="#springUrl('/resources/imgs/lotus.jpg')" >
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<link rel="stylesheet" type="text/css" href="#springUrl('/resources/easyui/themes/bootstrap/easyui.css')">
+	<link rel="stylesheet" type="text/css" href="#springUrl('/resources/easyui/themes/icon.css')">
+	<link rel="stylesheet" type="text/css" href="#springUrl('/resources/easyui/themes/color.css')">
+	<script type="text/javascript" src="#springUrl('/resources/easyui/jquery.min.js')"></script>
+	<script type="text/javascript" src="#springUrl('/resources/easyui/jquery.easyui.min.js')"></script>
+	<script type="text/javascript" src="#springUrl('/resources/js/common.js')"></script>
+
+
+<script type="text/javascript" src="#springUrl('/resources/easyui/locale/easyui-lang-zh_CN.js')"></script>

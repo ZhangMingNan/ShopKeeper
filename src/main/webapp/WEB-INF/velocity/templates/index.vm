@@ -1,0 +1,17 @@
+<script type="text/javascript" src="#springUrl('/resources/js/index.js')"></script>
+<div id="cc" class="easyui-layout" fit=true>  
+		    <div region="north" split="false"style="height:50px;background:#333;padding:5px 10px">
+		    <span style="font-size:27px;color:white;">RITAI</span> 
+			</div>
+		    <div region="west"  iconCls="icon-ok" split="false"style="width:200px;background-color:#ECECEC;">
+				<div id="aa" class="easyui-accordion"style="padding:0px;" border = false>  
+					<div   title="导航菜单"    style="overflow:auto;padding:5px;background-color:#ECECEC;">  
+								<ul id="menutree"></ul>  
+				    </div> 
+				</div>  
+		    </div>  
+		    <div region="center">
+				<div id="tt" class="easyui-tabs" fit=true border = false >  
+				</div>  
+		    </div>  
+</div>  

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		#parse('/layout/header.vm')
+  </head>
+  <body style="margin:0px;">
+		   $screen_content
+  </body>
+</html>
+
+
+

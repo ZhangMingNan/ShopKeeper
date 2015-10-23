@@ -1,0 +1,166 @@
+#set($layout = "/layout/emptyLayout.vm")
+<!DOCTYPE html>
+<html lang="en" class="no-js demo">
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="renderer" content="webkit" />
+  <title>TEST</title>
+  <meta name="description" content="" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <link rel="alternate icon" type="image/png" href="#springUrl('/resources/amaze/i/favicon.png')" />
+  <link rel="apple-touch-icon-precomposed" href=""#springUrl('/resources/amaze/i/app-icon72x72@2x.png')" />
+  <link rel="stylesheet" href="#springUrl('/resources/amaze/css/amazeui.min.css')" />
+  <script src="#springUrl('/resources/amaze/js/zepto.min.js')"></script>
+  <script src="#springUrl('/resources/amaze/js/handlebars.min.js')"></script>
+  <script src="#springUrl('/resources/amaze/js/amazeui.min.js')"></script>
+ </head>
+ <body>
+  <div class="page pg-demo">
+
+
+    <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider="{&quot;animation&quot;:&quot;slide&quot;,&quot;slideshow&quot;:false}">
+     <ul class="am-slides">
+      <li><img src="http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg" />
+       <div class="am-slider-desc">
+        白日依山尽
+       </div></li>
+      <li><img src="http://s.cn.bing.net/az/hprichbg/rb/CardinalsBerries_ZH-CN10679090179_1366x768.jpg" />
+       <div class="am-slider-desc">
+      黄河入海流
+       </div></li>
+      <li><img src="http://s.cn.bing.net/az/hprichbg/rb/QingdaoJiaozhou_ZH-CN10690497202_1366x768.jpg" />
+       <div class="am-slider-desc">
+        欲穷千里目
+       </div></li>
+      <li><img src="http://s.cn.bing.net/az/hprichbg/rb/FennecFox_ZH-CN13720911949_1366x768.jpg" />
+       <div class="am-slider-desc">
+       更上一层楼
+       </div></li>
+     </ul>
+    </div>
+
+
+
+
+
+   <div id="demo-view" data-backend-compiled="">
+    <ul data-am-widget="gallery" class="am-gallery sm-block-grid-2 md-block-grid-3 lg-block-grid-4 am-gallery-bordered" data-am-gallery="{  }">
+     <li>
+      <div class="am-gallery-item">
+       <a href="http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg"><img src="http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg" alt="远方 有一个地方 那里种有我们的梦想" /><h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+        <div class="am-gallery-desc">
+         2375-09-26
+        </div></a>
+      </div></li>
+     <li>
+      <div class="am-gallery-item">
+       <a href="http://s.cn.bing.net/az/hprichbg/rb/CardinalsBerries_ZH-CN10679090179_1366x768.jpg"><img src="http://s.cn.bing.net/az/hprichbg/rb/CardinalsBerries_ZH-CN10679090179_1366x768.jpg" alt="某天 也许会相遇 相遇在这个好地方" /><h3 class="am-gallery-title">某天 也许会相遇 相遇在这个好地方</h3>
+        <div class="am-gallery-desc">
+         2375-09-26
+        </div></a>
+      </div></li>
+     <li>
+      <div class="am-gallery-item">
+       <a href="http://s.cn.bing.net/az/hprichbg/rb/QingdaoJiaozhou_ZH-CN10690497202_1366x768.jpg"><img src="http://s.cn.bing.net/az/hprichbg/rb/QingdaoJiaozhou_ZH-CN10690497202_1366x768.jpg" alt="不要太担心 只因为我相信" /><h3 class="am-gallery-title">不要太担心 只因为我相信</h3>
+        <div class="am-gallery-desc">
+         2375-09-26
+        </div></a>
+      </div></li>
+     <li>
+      <div class="am-gallery-item">
+       <a href="http://s.cn.bing.net/az/hprichbg/rb/FennecFox_ZH-CN13720911949_1366x768.jpg"><img src="http://s.cn.bing.net/az/hprichbg/rb/FennecFox_ZH-CN13720911949_1366x768.jpg" alt="终会走过这条遥远的道路" /><h3 class="am-gallery-title">终会走过这条遥远的道路</h3>
+        <div class="am-gallery-desc">
+         2375-09-26
+        </div></a>
+      </div></li>
+    </ul>
+   </div>
+ 
+    <footer data-am-widget="footer" class="am-footer am-footer-default">
+     <div class="am-footer-miscs">
+      <p>由 <a href="http://www.baidu.com/" title="易初凌和" target="_blank">易初凌和</a> 提供技术支持</p>
+      <p>CopyRight&copy;2014 AllMobilize Inc.</p>
+     </div>
+    </footer>
+
+
+
+  <script type="text/javascript">var duoshuoQuery={short_name:"amui"};!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="http://static.duoshuo.com/embed.js",e.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();</script>
+  </div>
+  <script type="text/x-handlebars-template" id="demo-template">{{\#this}}
+  <div data-am-widget="slider" class="am-slider {{\#if theme}}am-slider-{{theme}}{{else}}am-slider-default{{/if}}{{\#if widgetId}} {{widgetId}}{{/if}}{{\#if className}} {{className}}{{/if}}" data-am-slider='{{sliderConfig}}' {{\#if id}}id="{{id}}"{{/if}}>
+  <ul class="am-slides">
+    {{\#each content}}
+      <li{{\#if thumb}} data-thumb="{{thumb}}"{{/if}}>
+        {{\#if link}}
+          <a href="{{link}}">
+        {{/if}}
+        {{\#if img}}
+        	<img src="{{img}}">
+        {{/if}}
+        {{\#if desc}}
+          <div class="am-slider-desc">{{{desc}}}</div>
+        {{/if}}
+        {{\#if link}}</a>{{/if}} {{!--/end link--}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
+{{/this}}</script>
+
+
+
+
+
+  <script type="text/x-handlebars-template" id="demo-template">{{\#this}}
+  <ul data-am-widget="gallery" class="am-gallery{{\#if options.cols}} sm-block-grid-{{options.cols}}{{else}} sm-block-grid-2{{/if}}
+  md-block-grid-3 lg-block-grid-4 {{\#if
+  theme}}am-gallery-{{theme}}{{else}}am-gallery-default{{/if}}{{\#if widgetId}} {{widgetId}}{{/if}}{{\#if className}} {{className}}{{/if}}" data-am-gallery="{ {{\#if options.gallery}}pureview: true{{/if}} }" {{\#if id}}id="{{id}}"{{/if}}>
+    {{\#each content}}
+      <li>
+        <div class="am-gallery-item">
+          {{\#if link}}
+            <a href="{{link}}">
+              {{\#if img}}<img src="{{img}}" {{\#if rel}}data-rel="{{rel}}"{{/if}} alt="{{title}}"/>{{/if}}
+              {{\#if title}}
+                <h3 class="am-gallery-title">{{{title}}}</h3>
+              {{/if}}
+              {{\#if desc}}
+                <div class="am-gallery-desc">{{{desc}}}</div>
+              {{/if}}
+            </a>
+          {{else}}
+            {{\#if img}}<img src="{{img}}" {{\#if rel}}data-rel="{{rel}}"{{/if}} alt="{{title}}"/>{{/if}}
+            {{\#if title}}
+              <h3 class="am-gallery-title">{{{title}}}</h3>
+            {{/if}}
+            {{\#if desc}}
+              <div class="am-gallery-desc">{{{desc}}}</div>
+            {{/if}}
+          {{/if}}
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+{{/this}}</script>
+  <script type="text/template" id="demo-data">
+{"options":{"cols":2},"theme":"bordered","content":[{"img":"http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg",
+"link":"http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg","title":"远方 有一个地方 那里种有我们的梦想","desc":"2375-09-26"},
+{"img":"http://s.cn.bing.net/az/hprichbg/rb/CardinalsBerries_ZH-CN10679090179_1366x768.jpg",
+"link":"http://s.cn.bing.net/az/hprichbg/rb/CardinalsBerries_ZH-CN10679090179_1366x768.jpg",
+"title":"某天 也许会相遇 相遇在这个好地方","desc":"2375-09-26"},
+{"img":"http://s.cn.bing.net/az/hprichbg/rb/QingdaoJiaozhou_ZH-CN10690497202_1366x768.jpg",
+"link":"http://s.cn.bing.net/az/hprichbg/rb/QingdaoJiaozhou_ZH-CN10690497202_1366x768.jpg",
+"title":"不要太担心 只因为我相信","desc":"2375-09-26"},
+{"img":"http://s.cn.bing.net/az/hprichbg/rb/FennecFox_ZH-CN13720911949_1366x768.jpg",
+"link":"http://s.cn.bing.net/az/hprichbg/rb/FennecFox_ZH-CN13720911949_1366x768.jpg","title":"终会走过这条遥远的道路","desc":"2375-09-26"}]}
+</script>
+
+
+</body>
+</html>

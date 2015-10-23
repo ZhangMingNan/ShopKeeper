@@ -1,0 +1,50 @@
+<script type="text/javascript" src="#springUrl('/resources/js/user.js')"></script>
+<table id="userDg"></table>
+   <div id="userToolbar">
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-notepad_add" plain="true" onclick="addUser()">添加用户</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-notepad_delete" plain="true" onclick="destroyUser()">删除用户</a>
+    </div>
+
+  		<div id="addUserDg" title="添加用户" class="easyui-dialog" style="width:400px;" closed=true modal=true>
+  				<form id="addUserform" method="post">
+  						<table>
+   							<tr>
+  								<td>用户名:</td>
+  								<td><input name="username" value="" /></td>
+  							</tr>
+  							<tr>
+  								<td>密码:</td>
+  								<td>
+									<input name="password" value="" />
+								</td>
+  							</tr>
+  					  	
+							<tr>
+  								<td>所属组织:</td>
+  								<td>
+        							<input type="hidden" id="organizationId" name = "organizationId" value = "">
+        							<input type="text" id="orgTree" class="easyui-combotree" >
+								</td>
+  							</tr>
+
+							<tr>
+  								<td>角色列表:</td>
+  								<td>
+									<input type="hidden" id="roleIds" name = "roleIds" value = "">
+        							<select  multiple="multiple" name="roleIdsStr">
+													#foreach($roleOption in $roleOptions)
+													<option value="$roleOption.value">$roleOption.text</option>
+													#end
+									 </select>
+								</td>
+  							</tr>
+
+  							<tr align="center">
+  								<td colspan="2">
+  									<a id="userOkBut" class="easyui-linkbutton">确定</a>
+  									<a id="userCancelBut" class="easyui-linkbutton">取消</a>
+  								</td>
+  							</tr>  							  							  							 							
+  						</table>
+  				</form>
+  		</div>

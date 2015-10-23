@@ -1,0 +1,11 @@
+<script type="text/javascript" src="#springUrl('/resources/js/serverInfo.js')"></script>
+
+<div id="p1" style="padding:10px;">    
+    <p>panel content.</p>    
+    <p>panel content.</p>    
+</div>
+<div id="p2" style="padding:10px;">    
+    <p>panel content.</p>    
+    <p>panel content.</p>    
+</div>
+ <table id="grid"></table>

@@ -1,0 +1,3 @@
+  <script type="text/javascript" src="#springUrl('/resources/easyui/datagrid-detailview.js')"></script>
+<script type="text/javascript" src="#springUrl('/resources/js/stockOut.js')"></script>
+<table id="stockOutDg" style="height:500px"></table>

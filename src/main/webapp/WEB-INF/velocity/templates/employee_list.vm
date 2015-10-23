@@ -1,0 +1,25 @@
+<script type="text/javascript" src="#springUrl('/resources/js/employee.js')"></script>
+		<style type="text/css">
+			.formtable {margin:10px auto 10px auto;}
+			.formtable td{padding:5px 0;}
+			.formtable .title {font-size:12px;text-align:right; vertical-align:top; line-height:22px; padding:5px 0 0 10px;}
+		</style>
+<table id="employeeDg"></table>
+
+ <div id="saveEmployeeDg">
+        <form id="fm" method="post" novalidate>
+				<table class="formtable">
+				<tbody>
+				 <tr>
+                <td class="title">姓名:</td>
+                <td> <input name="name" class="easyui-textbox" required="true"></td>
+           		 </tr>
+           		 <tr>
+                <td class="title">手机号:</td>
+                <td> <input name="phone" class="easyui-textbox" required="true"></td>
+           		 </tr>
+				</tbody>
+			</table>
+        </form>
+    </div>
+    

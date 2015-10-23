@@ -1,0 +1,45 @@
+<script type="text/javascript" src="#springUrl('/resources/js/resource.js')"></script>
+<table  id = "resourceListTree">
+</table>
+		<!--新增加资源对话框-->
+  		<div id="addResourceDialog" title="添加资源" class="easyui-dialog" style="width:400px;" closed=true modal=true>
+  				<form id="addResourceform" method="post">
+  						<input type="hidden" name="id" value="" />
+  						<table>
+   							<tr>
+  								<td>名称:</td>
+  								<td><input name="name" value="" /></td>
+  							</tr>
+  							<tr>
+  								<td>类型:</td>
+  								<td>
+<select name="type">
+<option value="button">按钮</option>
+<option value="menu">菜单</option>
+</select>
+								</td>
+  							</tr>
+  							<tr id = "urlInput">
+  								<td>URL路径:</td>
+  								<td><input name="url"></textarea></td>
+  							</tr>
+  							<tr>
+  								<td>权限字符串:</td>
+  								<td><input name="permission"></textarea></td>
+  							</tr>
+  							<tr align="center">
+  								<td colspan="2">
+  									<a id="okBut" class="easyui-linkbutton">确定</a>
+  									<a id="cancelBut" class="easyui-linkbutton">取消</a>
+  								</td>
+  							</tr>  							  							  							 							
+  						</table>
+  				</form>
+  		</div>
+
+		<!--右键显示的菜单。-->
+		<div id="resourcem" class="easyui-menu" style="width:150px;">
+			<div onclick="appendResource()">添加</div>
+			<div onclick="editorResource()">修改</div>
+			<div onclick="removeResource()">删除</div>
+		</div>  

@@ -1,0 +1,2 @@
+<script type="text/javascript" src="#springUrl('/resources/js/chartTabs.js')"></script>
+<div id="tt" class="easyui-tabs" fit=true border = false ></div>

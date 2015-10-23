@@ -1,0 +1,40 @@
+<script type="text/javascript" src="#springUrl('/resources/js/role.js')"></script>
+<table id="roleDg"></table>
+   <div id="roleToolbar">
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-notepad_add" plain="true" onclick="addRole()">添加</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-notepad_delete" plain="true" onclick="destroyRole()">删除</a>
+      <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-notepad_delete" plain="true" onclick="editRole()">修改</a>
+    </div>
+
+		<!--新增加角色对话框-->
+  		<div id="addRoleDg" title="添加角色" class="easyui-dialog" style="width:400px;" closed=true modal=true>
+  				<form id="addRoleform" method="post">
+						<input name="id" value="" type="hidden"/>
+  						<table>
+   							<tr>
+  								<td>角色名称:</td>
+  								<td><input name="role" value="" /></td>
+  							</tr>
+  							<tr>
+  								<td>角色描述:</td>
+  								<td>
+									<input name="description" value="" />
+								</td>
+  							</tr>
+  					  	
+							<tr>
+  								<td>拥有资源:</td>
+  								<td>
+        							<input type="text" id="resourceTree" name = "resourceIdsStr" class="easyui-combotree" >
+								</td>
+  							</tr>
+
+  							<tr align="center">
+  								<td colspan="2">
+  									<a id="RoleOkBut" class="easyui-linkbutton">确定</a>
+  									<a id="RoleCancelBut" class="easyui-linkbutton">取消</a>
+  								</td>
+  							</tr>  							  							  							 							
+  						</table>
+  				</form>
+  		</div>

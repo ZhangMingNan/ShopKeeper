@@ -1,0 +1,25 @@
+#set($layout = "/layout/emptyLayout.vm")
+
+<html>
+<head>
+<title>会员条形码</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<script type="text/javascript" src="#springUrl('/resources/easyui/jquery.min.js')"></script>
+<script type="text/javascript" src="#springUrl('/resources/qrcode/jquery-barcode-2.0.2.min.js')"></script>
+<script>
+$(function(){	
+	//jQuery('#qrcode').qrcode({
+		//text	: "http://123.57.82.254:8080/shopkeeper/"
+	//});
+	$("#qrcode").barcode("1424704551111", "ean13",{barWidth:5, barHeight:200,showHRI:true});     
+})
+</script>
+</head>
+<body>
+<div id="qrcode" style="MARGIN-RIGHT: auto;MARGIN-LEFT: auto;"></div>
+</body>
+</html>
+
+
+	
+	

@@ -1,0 +1,101 @@
+<script type="text/javascript" src="#springUrl('/resources/js/stock.js')"></script>
+
+
+
+<div id="stockOutDg">
+</br>
+  	原因:<select id = "stockOutTypeSelect"  name = "type" class="easyui-combobox" panelHeight="auto" style="width:180px" data-options="valueField: 'productNo.id',textField: 'productNo.no'">					
+		</select>
+		</br></br>
+    条码:<input id="stockOutBarCodeList" class="easyui-textbox"  style="width:270px;height:350px"/>
+</div>
+<div id="stockOutDetailDg">
+ 	<table id="stockOutDetailTable"></table>
+</div>
+
+<div id="returnGoodDg">
+	<table id="returnGoodsDataGrid"></table>
+</div>
+
+<div id="noTreeDg">
+	<ul id="noTree"></ul>
+</div>
+
+
+<div id="barcodeListDg">
+	</br>
+	款式:<select id = "groupTypeSelect"  name = "type" class="easyui-combobox" panelHeight="auto" style="width:270px" data-options="valueField: 'productType.id',textField: 'productType.type'">					
+	    </select>
+	    </br></br>
+    条码:<input id="barCodeTextBox"    	class="easyui-textbox"  style="width:270px;height:350px"/>
+</div>
+
+	
+<div id="addStockProductDg">
+		<table id="stockProductTable"></table>
+</div>
+  
+<table id="stockDg"></table>
+  		<div id="addStockDg" title="添加库存商品" class="easyui-dialog" style="width:400px" closed=true modal=true>
+  				<form id="addStockform" method="post">
+						<input name="id" value="" type="hidden"/>
+  						<table>
+   							<tr>
+  								<td>商品条形码:</td>
+  								<td>
+								<input   name="barCode" value="" class="easyui-numberbox"  data-options="required:true,validType:'minLength[5]'"/>
+</td>
+
+  							</tr>
+   							<tr>
+  								<td>款式:</td>
+  								<td>
+  										<select id = "stockTypeSelect*"  name = "type" class="easyui-combobox" panelHeight="auto" style="width:180px" data-options="valueField: 'productType.id',textField: 'productType.type'">					
+									   </select>
+								</td>
+  							</tr>
+   							<tr>
+  								<td>货号:</td>
+  								<td>
+  								  	   <select id = "productNoSelect"  name = "type" class="easyui-combobox" panelHeight="auto" style="width:180px" data-options="valueField: 'productNo.id',textField: 'productNo.no'">					
+									   </select>
+  								</td>
+  							</tr>
+   							<tr>
+  								<td>尺码:</td>
+  								<td><select id = "stockSizeSelect"  name = "size" class="easyui-combobox" panelHeight="auto" style="width:180px"data-options=" valueField:'productSize.id',textField:'productSize.size'" >					
+									   </select></td>
+  							</tr>
+  							<tr align="center">
+  								<td colspan="2">
+  									<a id="stockOkBut" class="easyui-linkbutton">确定</a>
+  									<a id="stockCancelBut" class="easyui-linkbutton">取消</a>
+  								</td>
+  							</tr>  							  							  							 							
+  						</table>
+  				</form>
+  		</div>
+ <div id="stockToolbar" style="padding:5px 10px 5px; background-color:#D8D8D8;" >
+  		<div>
+            款式: <select id = "typeBox"  class="easyui-combobox" panelHeight="auto" style="width:100px">					
+					  </select>
+            货号: <select id = "productNoBox"  class="easyui-combobox" panelHeight="auto" style="width:150px">
+					  </select>
+            入库时间: <input  id = "createDate" class="easyui-datebox" panelHeight="auto"  data-options="formatter:myformatter,parser:myparser,buttons:buttons"  style="width:100px"/>
+
+ </div>
+</div>
+ <div id="returnGoodsToolbar" style="padding:5px 10px 5px; background-color:#D8D8D8;" >
+ <input class="easyui-textbox" id = "returnNoTextBox" style="width:100%;height:24px;">
+</div>
+<script>
+var buttons = $.extend([], $.fn.datebox.defaults.buttons);
+buttons.splice(1, 0, {
+text: '清空时间',
+handler: function(target){
+	$('#createDate').datebox('setValue','');
+	$('#createDate').datebox('hidePanel');
+	query();
+}
+});
+</script>

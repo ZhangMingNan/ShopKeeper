@@ -1,0 +1,35 @@
+<script type="text/javascript" src="#springUrl('/resources/js/productType.js')"></script>
+
+<table id="productTypeDg"></table>
+ <div id="saveTypeDg">
+        <form id="fm" method="post" novalidate>
+            <div class="fitem">
+                <label>款式:</label>
+                <input name="type" class="easyui-textbox" required="true">
+            </div>
+        </form>
+    </div>
+      <style type="text/css">
+        #fm{
+            margin:0;
+            padding:10px 30px;
+        }
+        .ftitle{
+            font-size:14px;
+            font-weight:bold;
+            padding:5px 0;
+            margin-bottom:10px;
+            border-bottom:1px solid #ccc;
+        }
+        .fitem{
+            margin-bottom:5px;
+        }
+        .fitem label{
+            display:inline-block;
+              font-size:14px;
+            width:50px;
+        }
+        .fitem input{
+            width:160px;
+        }
+    </style>

@@ -1,0 +1,29 @@
+<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+<script type="text/javascript" src="#springUrl('/resources/js/salesChart.js')"></script>
+
+
+
+<div id="cc" class="easyui-layout" fit=true>  
+
+		    <div region="west"  iconCls="icon-ok" split="false"style="width:200px;background-color:#ECECEC;">
+							abc
+		    </div>  
+		    <div region="center">
+		    
+		    
+		    
+<div id="chartToolbar" class="easyui-panel"  style="padding:5px 10px 5px;" data-options="border:false">
+        <span>报表类型:</span><input id="typeCombox" >  
+        <span style="margin-left:10px">统计时间:</span><input id="timeCombox" >  
+        <a  style="margin-left:10px" id="sbtn" href="#">查询</a>  
+ </div>
+<div id="piepanel">
+<div id="main" style="width:490px ;height:300px"></div>
+<table id="grid1"></table>
+</div>
+
+
+
+
+		    </div>  
+</div>  

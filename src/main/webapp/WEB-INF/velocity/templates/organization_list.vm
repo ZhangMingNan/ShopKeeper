@@ -1,0 +1,28 @@
+<script type="text/javascript" src="#springUrl('/resources/js/organization.js')"></script>
+<table  id = "organizationListTree">
+</table>
+		<!--新增加资源对话框-->
+  		<div id="addOrganizationDialog" title="添加组织机构" class="easyui-dialog" style="width:400px;" closed=true modal=true>
+  				<form id="addOrganizationform" method="post">
+  						<input type="hidden" name="id" value="" />
+  						<table>
+   							<tr>
+  								<td>名称:</td>
+  								<td><input name="name" value="" /></td>
+  							</tr>
+  							<tr align="center">
+  								<td colspan="2">
+  									<a id="okBut" class="easyui-linkbutton">确定</a>
+  									<a id="cancelBut" class="easyui-linkbutton">取消</a>
+  								</td>
+  							</tr>  							  							  							 							
+  						</table>
+  				</form>
+  		</div>
+
+		<!--右键显示的菜单。-->
+		<div id="organizationm" class="easyui-menu" style="width:150px;">
+			<div onclick="appendOrganization()">添加</div>
+			<div onclick="editorOrganization()">修改</div>
+			<div onclick="removeOrganization()">删除</div>
+		</div>  

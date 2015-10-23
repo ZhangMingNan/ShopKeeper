@@ -1,0 +1,18 @@
+<script type="text/javascript" src="#springUrl('/resources/js/priceAdjust.js')"></script>
+<table id="priceAdjustDg"></table>
+  		<div id="editPriceAdjustDg" title="修改商品价格">
+  				<form id="editPriceAdjustform" method="post">
+						<input name="ids" value="" type="hidden"/>
+  						<table>		
+   							<tr>
+  								<td>进货价格:</td>
+  								<td><input name="price" value="" 	class="easyui-numberbox"   style="width:120px" data-options="min:0,max:9999999999999,required:true" /></td>
+  							</tr>
+
+   								<tr>
+  								<td>销售价格:</td>
+  								<td><input name="sellingPrice" value="" 	class="easyui-numberbox"   style="width:120px" data-options="min:0,max:9999999999999,required:true"/></td>
+  							</tr>				  							  							 							
+  						</table>
+  				</form>
+  		</div>

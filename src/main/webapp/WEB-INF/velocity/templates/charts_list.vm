@@ -1,0 +1,9 @@
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript" src="#springUrl('/resources/js/chartsList.js')"></script>
+
+<div class="easyui-panel"  style="padding:5px 10px 5px; background-color:#D8D8D8;" data-options="border:false">
+        <span>报表类型:</span><input id="typeCombox" >  
+        <span style="margin-left:10px">统计时间:</span><input id="timeCombox" >  
+        <a  style="margin-left:10px" id="sbtn" href="#">查询</a>  
+ </div>
+ <div id="main" style="height:400px"></div>

@@ -1,0 +1,2 @@
+<script type="text/javascript" src="#springUrl('/resources/js/typeTotal.js')"></script>
+<table id="typeTotalDg"></table>

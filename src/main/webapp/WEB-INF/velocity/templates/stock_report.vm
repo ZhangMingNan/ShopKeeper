@@ -1,0 +1,9 @@
+<script type="text/javascript" src="#springUrl('/resources/js/stockReport.js')"></script>
+
+<div id="stockReportToolbar" style="padding:5px 10px 5px; background-color:#D8D8D8;"> 
+
+款式:<select id = "groupTypeSelect"  name = "type" class="easyui-combobox" panelHeight="auto" style="width:80px" data-options="valueField: 'productType.id',textField: 'productType.type'"></select>
+	    
+货号: <select id = "productNoBox"  class="easyui-combobox" panelHeight="auto" style="width:150px"></select>
+</div>
+<table id="stockReportDg"></table>

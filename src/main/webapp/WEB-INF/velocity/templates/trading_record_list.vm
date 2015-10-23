@@ -1,0 +1,40 @@
+<script type="text/javascript" src="#springUrl('/resources/qrcode/jquery.qrcode.js')"></script>
+<script type="text/javascript" src="#springUrl('/resources/qrcode/qrcode.js')"></script>
+<script type="text/javascript" src="#springUrl('/resources/js/tradingRecord.js')"></script>
+
+<table id="tradingRecordDg" style="width:100%"></table>
+
+
+	<div id="tradingRecordToolbar" style="padding:5px 10px 5px; background-color:#D8D8D8;" > 
+ 		 <!--  会员码:  <input id="memberBarCodeTextBox"    	class="easyui-numberbox"   style="width:120px" data-options="min:0,max:9999999999999"/>    -->
+		   条码:  <input id="barCodeTextBox" style="width:170px"/>
+		   销售日期:<input  id = "tradingRecordDateBox" class="easyui-datebox" panelHeight="auto"  data-options="formatter:myformatter,parser:myparser"  style="width:105px"/>
+		<a id="removeTradingButton" href="#"></a>
+		<a id="reflushButton" href="#"></a>
+	</div>
+		<!--右键显示的菜单。-->
+		<div id="trMenu" class="easyui-menu" style="width:150px;">
+			<div onclick="removeOrderItem()">删除</div>
+			<div onclick="updatePrice()">修改价格</div>
+		</div>  
+  <div id="updatePriceDg">
+					   <table>
+   							<tr>
+  								<td>销售价格:</td>
+  								<td><input   id="newPrice" value="" /></td>
+  							</tr>					  							  							 							
+  						</table>
+  </div>
+	<div id="detailToolbar" style="padding:2px 5px 2px; background-color:#D8D8D8;" > 
+		   支付方式:  <select id = "paymentBox"  class="easyui-combobox" panelHeight="auto" style="width:80px" data-options="valueField: 'id',textField: 'payment',required:true"/>	</select>
+		   销售:  <select id = "employeeBox"  class="easyui-combobox" panelHeight="auto" style="width:100px" data-options="valueField: 'id',textField: 'name',required:true">	</select>
+	</div>
+  <div id="detailDg">
+  		   <input id="productId" hidden = true >
+		   <table id="detailgrid" style="width:300px"></table> 
+  </div>
+  
+<div id="addtradingRecordDg">
+		<table id="orderDg"></table>
+</div>
+  
