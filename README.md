@@ -1,6 +1,11 @@
 # ShopKeeper
 鞋店库存管理系统
 
+0、运行项目
+
+进入项目目录执行maven命令 mvn eclipse:eclipse ,执行完成后导入eclipse中. 
+配置maven启动命令 tomcat:run 启动.
+
 1、后端
 
 * 核心框架：Spring Framework 4.0
