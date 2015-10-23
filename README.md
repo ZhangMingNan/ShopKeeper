@@ -3,6 +3,7 @@
 
 ![(logo)](http://7u2o6d.com1.z0.glb.clouddn.com/Snip20151023_3.png)
 
+![(logo)](http://7u2o6d.com1.z0.glb.clouddn.com/Snip20151023_4.png)
 
 0、运行项目
 
